@@ -929,7 +929,7 @@
 
 					<div ng-show="listOpiskelijatAndKurssisuoritukset">
 
-						<h4>10. Tehtävä: Haku useasta taulusta</h4>
+						<h4>10. Tehtävä: Yhdistelyharjoittelua</h4>
 
 						<p>Tee nyt kysely, jolla saat listattua kaikki Kurssit ja niihin liittyvät kurssisuoritukset.
 							Valitse näytettäviksi sarakkeiksi vain kurssin <code>nimi</code> ja kurssisuorituksen
@@ -2094,7 +2094,7 @@ SELECT o.nimi opiskelija, k.arvosana
 				</query>
 
 				<div ng-show="unlockListCoursesWithNoAssignments">
-
+					<h4>15. tehtävä: Alikyselyt</h4>
 					<p>Tee nyt kysely, joka listaa kaikki kurssit, joilla ei ole yhtään tehtävää.</p>
 
 					<query db="db" query="">
@@ -2184,7 +2184,7 @@ SELECT o.nimi opiskelija, k.arvosana
 
 
 				<div ng-show="unlockListCountKurssisuorituksetByKurssiWithName">
-
+					<h4>16. Tehtävä: Yhteenvetokysely</h4>
 					<p>Tee nyt kysely, jossa lasket kurssisuoritus-taulussa olevien kurssien suoritukset -- taas koodin
 						perusteella. Tällä kertaa tulostuksessa tulee kuitenkn tulostaa kurssikoodin sijaan kurssin
 						nimi. Käytä sarakkeiden niminä "kurssi" ja "lukumäärä". (Huomaa, että edellisessä osassa
@@ -2208,7 +2208,7 @@ SELECT o.nimi opiskelija, k.arvosana
 
 
 				<div ng-show="unlockLeftJoinKurssiAndKurssisuoritus">
-
+					<h4>17. Tehtävä: LEFT JOIN</h4>
 					<p>Tee nyt LEFT JOIN -operaatiota käyttäen kysely, jolla listaat kurssikohtaiset suorituslukumäärät
 						siten, että myös ne kurssit, joilla ei ole yhtäkään suoritusta otetaan huomioon. Käytä
 						sarakkeiden niminä nimiä "kurssi" ja "lukumäärä".</p>
@@ -2480,6 +2480,7 @@ SELECT o.nimi opiskelija, k.arvosana
 				</query>
 
 				<div ng-show="tableKurssiWasCreated">
+					<h4>18. Tehtävä: Rivin luominen</h4>
 					<p>Lisää nyt tauluun Kurssi kurssi nimeltä "SQL-kielen perusteet", jonka kurssitunnus on "12345" ja
 						kuvaus "SELECT 'Hei maailma';".</p>
 
@@ -2511,7 +2512,7 @@ SELECT o.nimi opiskelija, k.arvosana
 					<query db="db" rows="2" query="SELECT * FROM sqlite_master">
 					</query>
 
-
+					
 					<p>Olemassaolevan taulun poistaminen -- esimerkiksi silloin jos sen nimen on kirjoittanut väärin,
 						onnistuu komennolla <code>DROP TABLE</code>, mitä seuraa taulun nimi. Voit kokeilla sitä
 						seuraavassa -- näet poistuiko tietokantataulu kyselyn <code>SELECT * FROM sqlite_master</code>
