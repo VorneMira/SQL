@@ -2467,7 +2467,7 @@ SELECT o.nimi opiskelija, k.arvosana
 
 
 				<p><strong><em>Kurssi-taulun luominen</em></strong></p>
-
+				<h4>18. Tehtävä: Taulun luominen</h4>
 				<p>Luo tietokantaan taulu <code>Kurssi</code>, jolla on sarakkeet <code>kurssitunnus</code>,
 					<code>nimi</code> ja <code>kuvaus</code>.</p>
 
@@ -2480,7 +2480,7 @@ SELECT o.nimi opiskelija, k.arvosana
 				</query>
 
 				<div ng-show="tableKurssiWasCreated">
-					<h4>18. Tehtävä: Rivin luominen</h4>
+					<h4>19. Tehtävä: Rivin luominen</h4>
 					<p>Lisää nyt tauluun Kurssi kurssi nimeltä "SQL-kielen perusteet", jonka kurssitunnus on "12345" ja
 						kuvaus "SELECT 'Hei maailma';".</p>
 
@@ -2503,24 +2503,9 @@ SELECT o.nimi opiskelija, k.arvosana
 				<aside class="info">
 					<br />
 					<h1>Olemassaolevien taulujen listaaminen ja poisto</h1>
-
-					<p>Tietokannanhallintajärjestelmät tyypillisesti tarjoavat mahdollisuuden olemassaolevien
-						tietokantataulujen listaamiseen. Tämä toiminnallisuus on kuitenkin järjestelmäkohtaista --
-						esimerkiksi tässä materiaalissa käyttämässämme SQLite-versiossa taulujen tiedot löytyvät
-						piilotetusta tietokantataulusta <code>sqlite_master</code>.</p>
-
-					<query db="db" rows="2" query="SELECT * FROM sqlite_master">
-					</query>
-
 					
 					<p>Olemassaolevan taulun poistaminen -- esimerkiksi silloin jos sen nimen on kirjoittanut väärin,
-						onnistuu komennolla <code>DROP TABLE</code>, mitä seuraa taulun nimi. Voit kokeilla sitä
-						seuraavassa -- näet poistuiko tietokantataulu kyselyn <code>SELECT * FROM sqlite_master</code>
-						avulla.</p>
-
-					<query db="db" rows="2">
-					</query>
-
+						onnistuu komennolla <code>DROP TABLE</code>, mitä seuraa taulun nimi.
 				</aside>
 			</div>
 
