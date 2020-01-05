@@ -86,7 +86,7 @@
 						href="http://hiski.genealogia.fi/hiski/" target="_blank">http://hiski.genealogia.fi/hiski/</a>
 					on Suomen Sukututkimusseuran ylläpitämä Historiakirjojen hakupalvelu. Käy sivulle, valitse kieli,
 					etsi "Kaikista", ja valitse "Kastetut".</p>
-				<h2>1. tehtävä: Tutustu tietokantaan</h2>
+				<h4>1. tehtävä: Tutustu tietokantaan</h4>
 				<p><b>
 						Minkälaisia tuloksia löydät omalla etunimelläsi? Entä, minkälaisia tuloksia löydät nimillä Matti
 						ja
@@ -114,7 +114,7 @@
 					puhelinnumeroa tai sähköpostiosoitetta. Kun rekisteröidyt verkossa oleviin palveluihin, on
 					tyypillistä, että ne pyytävät vähintään sähköpostiosoitteen. Nämä tiedot tallentuvat kuitenkin
 					palvelu- tai yrityskohtaisiin tietokantoihin, josta niitä mahdollisesti yhdistellään.</p>
-				<h2>2. Tehtävä: Käyttämäsi tietokannat</h2>
+				<h4>2. Tehtävä: Käyttämäsi tietokannat</h4>
 				<p><b>Pohdi, kuinka moneen palveluun olet syöttänyt sähköpostiosoitteesi? Entä nimesi tai
 						syntymäpäiväsi?
 						Tyypillisesti moni näistä palveluista on erillinen, mutta, tulevaisuudessa tätä tietoa tullaan
@@ -201,7 +201,7 @@
 				<br />
 
 				<h1>Pientä pohdintaa!</h1>
-				<h2>3. Tehtävä: Piirrä kaavio</h2>
+				<h4>3. Tehtävä: Piirrä kaavio</h4>
 				<p>Hahmottele paperille seuraavaan kuvaukseen liittyvä kaavio yllä esitetyllä tavalla. Ota siitä kuva ja
 					siirrä GitHubin SQL repositorioon. Mitkä ovat
 					käsitteet, ja miten ne liittyvät toisiinsa?</p>
@@ -526,7 +526,7 @@
 
 				<div ng-show="listAllStudentsDone">
 
-					<h4>Tehtävät</h4>
+					<h4>4. Tehtävä: Hae kaikki</h4>
 
 					<p>Tee nyt kysely, jolla saat listattua kaikki <code>Kurssisuoritus</code>-taulussa olevat rivit.
 					</p>
@@ -553,7 +553,7 @@
 
 				<div ng-show="listAllStudentsWithAttributesDone">
 
-					<h4>Tehtävät</h4>
+					<h4>5. Tehtävä: Hae kurssien nimet</h4>
 
 					<p>Tee nyt kysely, jolla saat listattua <code>Kurssisuoritus</code>-taulussa olevien kurssien nimet.
 					</p>
@@ -582,7 +582,7 @@
 
 				<div ng-show="listDistinctMajorsDone">
 
-					<h4>Tehtävät</h4>
+					<h4>6. Tehtävä: Uniikit rivit</h4>
 
 					<p>Tee nyt kysely, jolla saat listattua <code>Kurssisuoritus</code>-taulussa olevat <em>uniikit</em>
 						kurssit.</p>
@@ -611,7 +611,7 @@
 
 				<div ng-show="selectJoniDone">
 
-					<h4>Tehtävät</h4>
+					<h4>7. Tehtävä: Hae nimellä</h4>
 
 					<p>Tee nyt kysely, jolla saat listattua <code>Opiskelija</code>-taulusta kaikki ne opiskelijat,
 						joiden nimi on 'Anna'.</p>
@@ -624,7 +624,7 @@
 
 
 					<div ng-show="selectAnnaDone">
-
+						<h4>8. Tehtävä: Hae ehdolla</h4>
 						<p>Tee nyt kysely, jolla saat listattua <code>Kurssisuoritus</code>-taulusta kaikki
 							Pihla-nimisen opiskelijan suoritukset. Voit olettaa, että Opiskelija-taulun sisältö on
 							täsmälleen se, kuin mikä se tähän asti on ollut. Vinkki: millä Pihlan tunnistaa kummassakin
@@ -688,7 +688,7 @@
 
 				<div ng-show="listOpiskelijatWithSmallAInName">
 
-					<h4>Tehtävät</h4>
+					<h4>9. Tehtävä: LIKE</h4>
 
 					<p>Tee nyt kysely, jolla saat listattua kaikki Opiskelija-taulussa olevat pääaineet, joissa esiintyy
 						sana "tiede". </p>
@@ -839,8 +839,8 @@
 
 
 			<p>Ensimmäinen askel on tietokantataulun Kurssi luominen sekä sen pääavaimen määrittely. Kurssin nimi ei ole
-				hyvä avain, sillä esimerkiksi kurssin nimi "Tietokone työvälineenä" toistuu eri tiedekunnissa ja
-				laitoksissa useiden erilaisten kurssien nimenä. Toisaalta, avaimen on hyvä olla sellainen, että se ei
+				hyvä avain, sillä esimerkiksi kurssin nimi "Tietokone työvälineenä" saattaa toistua eri oppiaineissa ja
+				oppilaitoksissa useiden erilaisten kurssien nimenä. Toisaalta, avaimen on hyvä olla sellainen, että se ei
 				muutu -- (jos avain muuttuisi, kaikki viiteavaimet tulisi myös päivittää) -- kuvauskaan ei ole hyvä
 				avain. Luodaan avainta varten uusi attribuutti, <em>kurssitunnus</em>, ja lisätään se tauluun muiden
 				kurssikäsitteeseen liittyvien attribuuttien kanssa.</p>
@@ -929,7 +929,7 @@
 
 					<div ng-show="listOpiskelijatAndKurssisuoritukset">
 
-						<h4>Tehtävät</h4>
+						<h4>10. Tehtävä: Haku useasta taulusta</h4>
 
 						<p>Tee nyt kysely, jolla saat listattua kaikki Kurssit ja niihin liittyvät kurssisuoritukset.
 							Valitse näytettäviksi sarakkeiksi vain kurssin <code>nimi</code> ja kurssisuorituksen
@@ -1212,7 +1212,7 @@
 
 				<div ng-show="listOpiskelijatJaKurssisuoritukset">
 
-					<h4>Tehtävät</h4>
+					<h4>11. Tehtävä: Haku useasta taulusta</h4>
 
 					<p>Tee nyt kysely, joka tulostaa jokaisen opiskelijan nimen, kurssisuorituksen päivämäärän, ja
 						kurssisuorituksen arvosanan.</p>
@@ -1256,7 +1256,7 @@
 
 				<div ng-show="listOpiskelijanSuorittamatKurssit">
 
-					<h4>Tehtävät</h4>
+					<h4>12. Tehtävä: Tulosten otsikointi</h4>
 
 					<p>Tee nyt kysely, joka tulostaa jokaiseen kurssiin liittyvän tehtävän. Tulostuksen otsikoiden
 						nimien tulee olla 'kurssi' ja 'tehtävä'.</p>
