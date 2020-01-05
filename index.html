@@ -1444,7 +1444,7 @@ SELECT Tehtävä.nimi AS Tehtävä
 </pre>
 
 
-			<p>Kyselyn tulos on seuraava -- tuntuu toimivan.</p>
+			<p>Kyselyn tulos on seuraava.</p>
 
 
 			<div class="data-table">
@@ -1501,7 +1501,7 @@ SELECT Tehtävä.nimi AS Tehtävä
 
 				<div ng-show="listTikapeTehtavat">
 
-					<h4>Tehtävät</h4>
+					<h4>13. Tehtävä: Hakujen jäsentely</h4>
 
 					<p>Tee nyt kysely, joka tulostaa kaikki tehtävät, jotka opiskelija 'Anna' on suorittanut. Tee
 						tulostuksesta sellainen, että yksi sarake sisältää kurssin nimen, ja toinen sarake tehtävän
@@ -1521,6 +1521,8 @@ SELECT Tehtävä.nimi AS Tehtävä
 				<br />
 				<h1>Pohdi</h1>
 
+				<h4>14. Tehtävä: pohdintaa taulujen yhdistämisestä</h4>
+
 				<p>Alla on kaksi vaihetta edellisessä esimerkissä rakennetusta kyselystä.</p>
 
 				<pre class="sh_sql">
@@ -1537,8 +1539,8 @@ SELECT Opiskelija.nimi AS Opiskelija, Tehtävä.nimi AS Tehtävä
         AND Kurssi.kurssitunnus = Kurssitehtävä.kurssi
         AND Tehtävä.tunnus = Kurssitehtävä.tehtävä
         AND Tehtäväsuoritus.tehtävä = Kurssitehtävä.tunnus
-        AND Tehtäväsuoritus.opiskelija = Opiskelija.opiskelijanumero;</pre>
-
+		AND Tehtäväsuoritus.opiskelija = Opiskelija.opiskelijanumero;</pre>
+		
 				<p>Ensimmäisen kyselyn tuloksena on kolme riviä, ja se listaa kaikki tehtävät jotka liittyvät kurssiin
 					'Tietokantojen perusteet'. Miksi kuitenkin toisen kyselyn tuloksena on viisi riviä? Jos kurssiin
 					liittyviä tehtäviä on vain kolme, mistä neljäs ja viides rivi tulee, ja miksi?</p>
@@ -1740,11 +1742,6 @@ INSERT INTO Kurssi (kurssitunnus, nimi, kuvaus)
 			</div>
 
 
-			<header>
-				<h1 id="viikko2">Viikko 2</h1>
-			</header>
-
-
 			<h1>Käsiteanalyysi</h1>
 
 
@@ -1760,12 +1757,6 @@ INSERT INTO Kurssi (kurssitunnus, nimi, kuvaus)
 			<p>Käsitteiden välisillä yhteyksillä taas tarkoitetaan esimerkiksi käsitteiden välisiä suhteita, esimerkiksi
 				Henkilöllä voi olla sisaruksia sekä vanhemmat, ja henkilö voi vaikkapa opiskella jossain opinahjossa.
 			</p>
-
-			<p>Seuraamme tällä kurssilla kurssin <em>Ohjelmistotekniikan menetelmät</em> <a
-					href="http://www.cs.helsinki.fi/u/mluukkai/otm2012/otm.pdf" target="_blank">luentomonisteessa</a>
-				esitettyä menetelmää käsiteanalyysiin. Siinä missä kurssilla ohjelmistotekniikan menetelmät puhutaan
-				luokkaehdokkaista, puhumme tällä kurssilla käsitteistä. Kurssi ohjelmistotekniikan menetelmät linjaa
-				seuraavat askeleet käsitteiden eriyttämiseen:</p>
 
 			<ol>
 				<li><em>Kartoita käsite-ehdokkaita</em>
